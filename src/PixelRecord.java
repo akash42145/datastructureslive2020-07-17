@@ -1,7 +1,11 @@
-import java.util.Objects;
-
-public record PixelRecord(int x, int y) implements Pixel, Comparable<PixelRecord> {
+public class PixelRecord implements Pixel, Comparable<PixelRecord> {
     // tinyurl.com/ArrayList2020
+	private int x;
+	private int y;
+	PixelRecord(int x, int y){
+		this.x = x;
+		this.y= y;
+	}
     @Override
     public int hashCode() {
         // 1920 x 1080
